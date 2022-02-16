@@ -13,12 +13,12 @@ table {border-spacing: 0;}
 #header .nav {float: right; width:950px; height:100px; line-height: 100px; background: #b39ddb;}
 
 /* banner */
-#banner {width: 1200px; text-align: center; height: 360px;}
+#banner {width: 1200px; text-align: center; height: 360px; overflow: hidden;}
 
 /* slider */
-.sliderList {}
+.slideList {position: relative; width: 1200px; height: 360px;}
 .slideList .slideImg {position: relative;}
-.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,50%); background: rgba(255, 255, 255, 0.5); padding: 10px 30px; border-radius: 25px;}
 .slideList .slideImg img {display: block;}
 
 /* contents */
