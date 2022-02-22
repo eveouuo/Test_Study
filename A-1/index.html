@@ -1,121 +1,84 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="KO">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/A-1/css/style.css">
-    <title>Just Shopping Mall</title>
+    <title>진눈머</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <div class="wrap">
-        <header>
-            <div class="headerArea">
-                <div id="logo">
-                    <a href="#">
-                        <img src="./img/top_logo.jpg" alt="toplogo">
-                    </a>
-                </div>
-                <div class="nav">
-                    <ul class="mainNav">
-                        <li><a href="#">탑</a>
-                            <ul class="subNav">
-                                <li><a href="#">블라우스</a></li>
-                                <li><a href="#">티</a></li>
-                                <li><a href="#">셔츠</a></li>
-                                <li><a href="#">니트</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">아우터</a>
-                            <ul class="subNav">
-                                <li><a href="#">자켓</a></li>
-                                <li><a href="#">코트</a></li>
-                                <li><a href="#">가디건</a></li>
-                                <li><a href="#">머플러</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">팬츠</a>
-                            <ul class="subNav">
-                                <li><a href="#">청바지</a></li>
-                                <li><a href="#">짧은바지</a></li>
-                                <li><a href="#">긴바지</a></li>
-                                <li><a href="#">레깅스</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">악세서리</a>
-                            <ul class="subNav">
-                                <li><a href="#">귀고리</a></li>
-                                <li><a href="#">목걸이</a></li>
-                                <li><a href="#">반지</a></li>
-                                <li><a href="#">팔찌</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <header class="clearfix">
+            <h1>
+                <a href="#">
+                    <img src="./img/logo.png" alt="진실의 눈과 머리">
+                </a>
+            </h1>
+            <nav>
+                <ul class="gnb clearfix">
+                    <li>
+                        <a href="#">공지사항</a>
+                        <ul class="sub">
+                            <li><a href="#">독스모그예보</a></li>
+                            <li><a href="#">가입인사</a></li>
+                            <li><a href="#">출석부</a></li>
+                            <li><a href="#">방명록</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">아수라칼럼</a>
+                        <ul class="sub">
+                            <li><a href="#">아수라칼럼</a></li>
+                            <li><a href="#">소프트칼럼</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">진눈머칼럼</a>
+                        <ul class="sub">
+                            <li><a href="#">수호자칼럼</a></li>
+                            <li><a href="#">진실추적</a></li>
+                            <li><a href="#">방송자료</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">자유게시판</a>
+                        <ul class="sub">
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">토론과 논쟁</a></li>
+                            <li><a href="#">익명게시판</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <div id="slider">
-            <ul>
-                <li class="slider1"><img src="./img/slider_1.jpg" alt="slidimage"></li>
-                <li class="slider2"><img src="./img/slider_2.jpg" alt="slidimage"></li>
-                <li class="slider3"><img src="./img/slider_3.jpg" alt="slidimage"></li>
+        <div class="slide">
+            <ul class="slide_all">
+                <li>
+                    <a href="#">
+                        <img src="./img/banner1.jpg" alt="진실의 눈과머리">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/banner2.jpg" alt="아수라장">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/banner3.jpg" alt="death note">
+                    </a>
+                </li>
             </ul>
         </div>
-        <div id="content">
-            <div class="contentArea1">
-                <div class="notice">
-                    <h6 class="title">공지사항</h6>
-                    <div class="txt">
-                        <p><a href="#">text</a></p>
-                        <p><a href="#">text</a></p>
-                        <p><a href="#">text</a></p>
-                    </div>
-                </div>
-                <div class="gallery">
-                    <h6 class="title">갤러리</h6>
-                    <div>
-                        <ul class="galleryList">
-                            <li><img src="http://placehold.it/100x100" alt="galleryimg"></li>
-                            <li><img src="http://placehold.it/100x100" alt="galleryimg"></li>
-                            <li><img src="http://placehold.it/100x100" alt="galleryimg"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="contentArea2">
-                <ul>
-                    <li class="con2">
-                            <img src="./img/banner.jpg" alt="banner">
-                    </li>
-                    <li class="con3">
-                            <img src="http://placehold.it/300x180" alt="file short">
-                    </li>
-                </ul>    
-            </div>
-            <div id="popup">
-                <h4 class="popup_title">Title</h4>
-                <p class="popup_txt">text</p>
-                <button>X 닫기</button>
-            </div>
+        <div class="contents">
+
         </div>
         <footer>
-            <div class="footArea">
-                <div class="foot_logo">
-                    <img src="./img/footer_logo.jpg" alt="foot_logo">
-                </div>
-                <div class="copy">
-                    <span>Copyright</span>
-                </div>
-                <div class="sns">
-                    <ul class="snsList">
-                        <li><a href="#"><img src="./img/i_icorn.png" alt=""></a></li>
-                        <li><a href="#"><img src="./img/f_iorn.png" alt=""></a></li>
-                        <li><a href="#"><img src="./img/t_icorn.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
+
         </footer>
     </div>
-    
 </body>
 </html>
