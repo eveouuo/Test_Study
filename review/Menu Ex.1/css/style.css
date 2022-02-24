@@ -1,0 +1,19 @@
+/* reset */
+* {color: #333; text-decoration: none; margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+.clearfix::after {display: block; clear: both; content: '';}
+
+.wrap {width: 1200px; margin: 0 auto;}
+
+/* header */
+header {width: 100%; height: 100px; background: steelblue; position: relative;}
+header a {display: block; text-align: center;}
+
+header .logo {width: 200px; height: 40px; float: left; position: absolute; left: 0; top: 25px; background: navajowhite;}
+header .logo h1 a {display: block; color: #555;}
+
+header nav {float: right; position: absolute; right: 0; top: 25px;}
+header nav ul.gnb li {width: 150px; float: left;}
+header nav ul.gnb li > a {display: block; background:powderblue; padding: 10px 0;}
+header nav ul.gnb li:hover > a {background: navajowhite; color: steelblue;}
+header nav ul.gnb li ul.sub {display: none;}
