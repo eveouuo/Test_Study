@@ -5,12 +5,15 @@ $(document).ready(function(){
         $("ul.sub").stop().slideUp();
     });
 
-    $(".slide").children("div:gt(0)").hide();
-
-    var current = 0;
-
+    var currentIndex = 0;
+    
     setInterval(function(){
-        var next = (current + 1) % 3;
-        $()
-    },3000)
+        if(currentIndex < 2) {
+            currentIndex++;
+        }else {
+            currentIndex = 0;
+        }
+        $(".slide > .item").eq(currentIndex).siblings().fadeOut();
+        $(".slide > .item").eq(currentIndex).fadeIn();
+    },3000);
 })
