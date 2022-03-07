@@ -17,4 +17,11 @@ $(document).ready(function(){
         $(".slide ul.slide_all > li").eq(slideI).siblings().animate({"top":"-300px"},500);
         $(".slide ul.slide_all > li").eq(slideI).animate({"top":"0"},500);
     },3000);
+
+    $(".contents .notice_gal h3").click(function(){
+        $(".contents .notice_gal h3,.contents .notice_gal ul").removeClass("on");
+        $(this).addClass("on");
+        $(this).next("ul").addClass("on");
+    });
+
 });
