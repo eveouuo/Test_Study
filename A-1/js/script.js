@@ -24,4 +24,10 @@ $(document).ready(function(){
         $(this).next("ul").addClass("on");
     });
 
+    $("ul.notice li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+    $("button").click(function(){
+        $(".modal").fadeOut();
+    });
 });
