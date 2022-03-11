@@ -1,1 +1,55 @@
-* {margin: 0; padding: 0; list-style: none; text-decoration: none;}
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; color: #333;}
+img {display: block;}
+
+.clearfix::after {display: block; clear: both; content: '';}
+
+body {background: #fff;}
+
+#wrap {width: 1200px; margin: 0 auto;}
+
+/* header */
+header {width: 1200px; height: 100px;position: relative;}
+header .logo {float: left; width: 200px; height: 40px; padding: 30px 0;}
+
+header nav {float: right; padding: 70px 0;}
+header nav ul.gnb {width: 600px; position: absolute; top: 65px; right: 0;}
+header nav ul.gnb > li {float: left; width: 25%; height: 35px; line-height: 35px; border: 1px solid #3cb149; box-sizing: border-box; }
+header nav ul.gnb > li > a {font-size: 18px; font-weight: bold;}
+header nav ul.gnb > li a {display: block; text-align: center; }
+header nav ul.gnb > li:hover > a {background: #3cb149; color: #fff;}
+header nav ul.gnb > li > ul.subGnb {position: absolute; top: 35px; width: 25%; display: none; z-index: 11;}
+header nav ul.gnb > li > ul.subGnb > li {height: 35px; line-height: 35px;}
+header nav ul.gnb > li > ul.subGnb > li > a:hover {background: #fff; color: #3cb149;}
+header nav .nav_bg {width: 1200px; height: 105px; background: #3cb149; position: absolute; top: 99px; right: 0;display: none; z-index: 10;}
+/* //header */
+
+/* slide */
+#slide {width: 1200px; height: 300px; overflow: hidden;}
+#slide .slideList {width: 3600px;}
+#slide .slideItem {float: left; position: relative;}
+#slide .slideItem h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; padding: 10px 15px; background: rgba(120, 200, 170, 0.5); border-radius: 30px;}
+#slide .slideItem img {display: block;}
+/* //slide */
+
+/* contents */
+#contents {width: 1200px; height: 200px;}
+#contents section {float: left; margin-right:5px;}
+#contents section h3 {width: 100px; height: 30px; line-height: 30px; background: #3cb149; color: #fff; text-align: center;}
+
+#contents .notice {width: 390px; background: #3cb149;}
+#contents .notice .desc {width: 100%; padding: 5px; border-top: 1px solid#3cb149;}
+#contents .notice a span {display: block; float: left; width: 300px;}
+#contents .notice a:hover {display: block; color: #3cb149;}
+#contents .notice small {float: right; width: 90px;}
+
+#contents .gal {width: 390px; background: #000;}
+#contents .gal ul.galItem > li {float: left; padding: 5px;}
+#contents .gal ul.galItem > li > a > img {display: block; width: 100px; height: 100px;}
+
+#contents .conbanner {padding-right: 0;}
+/* //contents */
+
+/* footer */
+/* //footer */

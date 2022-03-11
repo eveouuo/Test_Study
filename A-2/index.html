@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Green복지재단</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/jquery-1.12.3.js"></script>
     <script src="./js/script.js"></script>
@@ -12,23 +12,143 @@
 <body>
     <div id="wrap">
         <!-- header -->
-        <header>
-
+        <header class="clearfix">
+            <h1 class="logo">
+                <a href="#"><img src="./img/top_logo.png" alt="Green 복지재단"></a>
+            </h1>
+            <nav>
+                <div class="nav_bg"></div>
+                <ul class="gnb clearfix">
+                    <li>
+                        <a href="#">재단소개</a>
+                        <ul class="subGnb">
+                            <li><a href="#">설립취지</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원하기</a>
+                        <ul class="subGnb">
+                            <li><a href="#">국내후원</a></li>
+                            <li><a href="#">국외후원</a></li>
+                            <li><a href="#">맞춤후원</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">자료실</a>
+                        <ul class="subGnb">
+                            <li><a href="#">서식자료실</a></li>
+                            <li><a href="#">사진자료실</a></li>
+                            <li><a href="#">후원양식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">스토리</a>
+                        <ul class="subGnb">
+                            <li><a href="#">웹진</a></li>
+                            <li><a href="#">보고서</a></li>
+                            <li><a href="#">나의 후원</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <!-- //header -->
         <!-- slide -->
         <div id="slide">
-
+            <div class="slideList clearfix">
+                <div class="slideItem">
+                    <h2>Image</h2>
+                    <a href="#">
+                        <img src="./img/item1.jpg" alt="text">
+                    </a>    
+                </div>
+                <div class="slideItem">
+                    <h2>Image</h2>
+                    <a href="#">
+                        <img src="./img/item2.jpg" alt="text">
+                    </a>    
+                </div>
+                <div class="slideItem">
+                    <h2>Image</h2>
+                    <a href="#">
+                        <img src="./img/item3.jpg" alt="text">
+                    </a>    
+                </div>
+            </div>
         </div>
         <!-- //slide -->
         <!-- content -->
-        <div id="content">
-
+        <div id="contents" class="clearfix">
+            <section class="notice">
+                <h3>공지사항</h3>
+                <div class="desc clearfix">
+                    <a href="#">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        <small class="day">2022-03-10</small>
+                    </a>
+                    <a href="#">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        <small class="day">2022-03-10</small>
+                    </a>
+                    <a href="#">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        <small class="day">2022-03-10</small>
+                    </a>
+                    <a href="#">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        <small class="day">2022-03-10</small>
+                    </a>
+                    <a href="#">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                        <small class="day">2022-03-10</small>
+                    </a>
+                </div>
+            </section>
+            <section class="gal">
+                <h3>갤러리</h3>
+                <ul class="galItem">
+                    <li>
+                        <a href="#"><img src="./img/g_item1.jpg" alt="item1"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/g_item2.jpg" alt="item2"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/g_item3.jpg" alt="item3"></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="conbanner">
+                <a href="#"><img src="./img/banner.jpg" alt="contentbanner"></a>
+            </section>
         </div>
         <!-- //content -->
         <!-- footer -->
         <footer>
-            
+            <div class="footlogo">
+                <a href="#"><img src="./img/bottom_logo.png" alt="bottomlogo"></a>
+            </div>
+            <div class="copy">
+                <span>copyright &copy; 2022-03-10</span>
+            </div>
+            <div class="family">
+                <select name="familysite" id="familysite">
+                    <option value="familysite">
+                        <a href="#">Family Site</a>
+                    </option>
+                    <option value="naver">
+                        <a href="#">Naver</a>
+                    </option>
+                    <option value="daum">
+                        <a href="#">Daum</a>
+                    </option>
+                    <option value="facebook">
+                        <a href="#">Facebook</a>
+                    </option>
+                </select>
+            </div>
         </footer>
         <!-- //footer -->
     </div>
