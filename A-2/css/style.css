@@ -7,6 +7,14 @@ img {display: block;}
 
 body {background: #fff;}
 
+#modal {position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 20; display: none;}
+#modal .modalinner {width: 500px; height: 500px; background: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); padding: 30px;}
+#modal .modalinner .title {width: 100%; border-bottom: 1px solid #3cb149; }
+#modal .modalinner .modaltxt {padding: 10px 20px;}
+#modal .modalinner .btn {position: absolute; right: 30px; bottom: 30px;}
+#modal .modalinner button {padding: 5px 10px; border: 1px solid #3cb149; background: #fff; border-radius: 5px; color: #3cb149; font-weight: bold;}
+#modal .modalinner button:hover {color: #fff; background: #3cb149;}
+
 #wrap {width: 1200px; margin: 0 auto;}
 
 /* header */
@@ -35,21 +43,30 @@ header nav .nav_bg {width: 1200px; height: 105px; background: #3cb149; position:
 
 /* contents */
 #contents {width: 1200px; height: 200px;}
-#contents section {float: left; margin-right:5px;}
+#contents section {float: left; margin-right:10px;}
 #contents section h3 {width: 100px; height: 30px; line-height: 30px; background: #3cb149; color: #fff; text-align: center;}
 
-#contents .notice {width: 390px; background: #3cb149;}
-#contents .notice .desc {width: 100%; padding: 5px; border-top: 1px solid#3cb149;}
-#contents .notice a span {display: block; float: left; width: 300px;}
-#contents .notice a:hover {display: block; color: #3cb149;}
+#contents .notice {width: 390px; height: 200px;}
+#contents .notice .desc {width: 100%; padding-top: 10px; border-top: 1px solid#3cb149;}
+#contents .notice ul.desc li a span {display: block; float: left; width: 300px;}
+#contents .notice ul.desc li a:hover span {display: block; color: #3cb149;}
 #contents .notice small {float: right; width: 90px;}
 
-#contents .gal {width: 390px; background: #000;}
-#contents .gal ul.galItem > li {float: left; padding: 5px;}
+#contents .gal {width: 390px; height: 200px;}
+#contents .gal ul.galItem {border-top: 1px solid#3cb149;}
+#contents .gal ul.galItem > li {float: left; padding: 25px 15px;}
 #contents .gal ul.galItem > li > a > img {display: block; width: 100px; height: 100px;}
 
-#contents .conbanner {padding-right: 0;}
+#contents .conbanner {margin-right: 0;}
 /* //contents */
 
 /* footer */
+footer {width: 1200px; height: 100px; position: relative;}
+footer .footlogo {float: left; padding: 30px 0;}
+
+footer .copy {width: 670px; margin: 0 auto; text-align: center; padding: 35px 0;}
+footer .copy span {display: block;}
+
+footer .family {float: right; position: absolute; top: 40px; right: 30px;}
+footer .family select {display: block; width: 120px; text-align: center; border: 1px solid #3cb149; color: #3cb149; box-sizing: border-box; border-radius: 5px; font-size: 15px;}
 /* //footer */

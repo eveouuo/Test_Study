@@ -16,4 +16,11 @@ $(document).ready(function(){
         var slideList = crruntIndex * (-1200)+"px";
         $(".slideItem").animate({left:slideList},400)
     },3000);
+
+    $("#contents > .notice > .desc > li").eq(0).click(function(){
+        $("#modal").fadeIn();
+    });
+    $("#modal > .modalinner > .btn").click(function(){
+        $("#modal").fadeOut();
+    });
 });
