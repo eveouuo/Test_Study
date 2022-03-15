@@ -10,16 +10,25 @@
     <script src="./js/common.js"></script>
 </head>
 <body>
+    <div id="modal">
+        <div class="modalInner">
+            <h2 class="title">Title</h2>
+            <div class="modaltxt">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cumque voluptatem suscipit vero at id quae aut necessitatibus quibusdam libero.</span>
+            </div>
+            <button class="btn">닫기</button>
+        </div>
+    </div>
     <div id="wrap">
         <!-- header -->
-        <header>
+        <header class="clearfix">
             <div class="topLogo">
                 <a href="#">
                     <img src="./img/top_logo.png" alt="topLogo">
                 </a>
             </div>
-            <nav>
-                <ul class="gnb">
+            <nav class="clearfix">
+                <ul class="gnb clearfix">
                     <li>
                         <a href="#">강원천문대</a>
                         <ul class="sub">
@@ -75,13 +84,76 @@
         </section>
         <!-- //slide -->
         <!-- contents -->
-        <section>
-            <div class="no_gal">
-                
-            </div>
-        </section>
+        <div id="contents" class="clearfix">
+            <section class="noti_gal">
+                <h2 class="on">공지사항</h2>
+                <ul class="desc on clearfix">
+                    <li>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet.
+                            <small>2022-03-15</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet.
+                            <small>2022-03-15</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet.
+                            <small>2022-03-15</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet.
+                            <small>2022-03-15</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet.
+                            <small>2022-03-15</small>
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="l100">갤러리</h2>
+                <ul class="gal">
+                    <li><a href="#"><img src="./img/g_item1.jpg" alt="goods1"></a></li>
+                    <li><a href="#"><img src="./img/g_item2.jpg" alt="goods2"></a></li>
+                    <li><a href="#"><img src="./img/g_item3.jpg" alt="goods3"></a></li>
+                </ul>
+            </section>
+            <section class="ban">
+                <a href="#">
+                    <img src="./img/banner.jpg" alt="banner">
+                </a>
+            </section>
+            <section class="baro">
+                <a href="#">
+                    <img src="./img/go_banner.jpg" alt="바로가기">
+                </a>
+            </section>
+        </div>
         <!-- //contents -->
         <!-- footer -->
+        <footer>
+            <div class="bottomLogo">
+                <a href="#"><img src="./img/bottom_logo.png" alt="bottomLogo"></a>
+            </div>
+            <div class="bottomNav">
+                <ul>
+                    <li><a href="#">Menu1</a></li>
+                    <li><a href="#">Menu2</a></li>
+                    <li><a href="#">Menu3</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <span>copyright &copy; 2020-03-14</span>
+            </div>
+        </footer>
         <!-- //footer -->
     </div>
 </body>

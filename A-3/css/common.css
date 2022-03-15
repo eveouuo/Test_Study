@@ -1,1 +1,73 @@
 @charset "UTF-8";
+
+* {margin: 0; padding: 0; color: #333; text-decoration: none; list-style: none;}
+
+.clearfix::after {display: block; clear: both; content: '';}
+
+#modal {position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 100;}
+#modal .modalInner {width: 500px; height: 500px; background: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+#wrap {width: 1200px; margin: 0 auto;}
+
+/* header */
+header {width: 1200px; height: 100px; position: relative;}
+
+header .topLogo {float: left; width: 200px; height: 40px; padding: 30px 0;}
+
+header nav {float: right; width: 700px; padding: 30px 0; position: absolute; top:0; right: 0; z-index: 10;}
+
+header nav ul.gnb {width: 100%;}
+header ul.gnb > li {float: left; width: 25%; text-align: center; font-size: 13px;}
+header ul.gnb > li > a {width: 100%; display: block; float: left; font-size: 18px; text-align: center; height: 40px; line-height: 40px;}
+header ul.gnb > li:hover > a {color: #fff; background: #0066ad;}
+
+header ul.gnb > li > ul.sub {width: 100%; line-height: 40px; display: none; }
+header ul.gnb > li > ul.sub > li {width: 100%;background: #fff;}
+header ul.gnb > li > ul.sub > li > a {display: block; width: 100%; height: 100%;}
+header ul.gnb > li > ul.sub > li:hover > a {color: #fff; background: #0066ad;} 
+/* //header */
+
+/* slide */
+#slide {width: 1200px; height: 300px; overflow: hidden;}
+
+#slide .slideItem .slideImg {position: relative;}
+#slide .slideItem .slideImg h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 20px; color: #fff; background: rgba(120, 120, 250, 0.5); padding: 10px 15px; border-radius: 30px;}
+#slide .slideItem .slideImg img {display: block;}
+/* //slide */
+
+/* contenst */
+#contents section {float: left; padding-right: 15px;}
+
+#contents .noti_gal {width: 390px; height: 200px; position: relative;}
+#contents .noti_gal h2 {width: 100px; text-align: center; font-size: 18px; height: 30px; line-height: 30px; position: absolute; top: 0; left: 0;}
+#contents .noti_gal h2.l100 {position: absolute; top: 0; left: 100px;}
+#contents .noti_gal ul {width: 100%; position: absolute; top: 30px; left: 0;}
+
+#contents .noti_gal h2.on {color: #fff; background-color: #0066ad;}
+#contents .noti_gal ul.on {display: block;}
+
+#contents .noti_gal .desc {width: 380px; border-top: 1px solid #0066ad; padding: 5px;}
+#contents .noti_gal .desc a {display: block; font-size: 13px; height: 20px; line-height: 20px;}
+#contents .noti_gal .desc a:hover {color: #0066ad;}
+#contents .noti_gal .desc a small {float: right;}
+
+#contents .noti_gal ul {display: none;}
+#contents .noti_gal .gal {width: 390px; border-top: 1px solid #0066ad;}
+#contents .noti_gal .gal > li {float: left; width: 100px; height: 100px; padding: 10px;}
+#contents .noti_gal .gal > li > a > img {width: 100px; height: 100px;}
+
+#contents .ban {width: 390px;}
+#contents .ban img {width: 390px;}
+#contents .baro {width: 390px; padding-right: 0;}
+#contents .baro img {width: 390px;}
+/* //contents */
+
+/* footer */
+footer {width: 1200px; height: 100px; position: relative;}
+footer .bottomLogo {float: left; width: 200px; height: 40px; padding: 30px 0;}
+footer .bottomNav {position: absolute; top: 20px; left: 50%; transform: translate(-50%,0);}
+footer .bottomNav > ul > li {float: left; padding: 10px;}
+footer .bottomNav > ul > li > a:hover {color: #0066ad;}
+
+footer .copy {position: absolute; bottom: 20px; left: 50%; transform: translate(-50%,0)}
+/* //footer */
