@@ -4,13 +4,13 @@
 
 .clearfix::after {display: block; clear: both; content: '';}
 
-#modal {position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 100;}
+#modal {position: fixed; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 100; display: none;}
 #modal .modalInner {width: 500px; height: 500px; background: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 
 #wrap {width: 1200px; margin: 0 auto;}
 
 /* header */
-header {width: 1200px; height: 100px; position: relative;}
+header {width: 100%; height: 100px; position: relative;}
 
 header .topLogo {float: left; width: 200px; height: 40px; padding: 30px 0;}
 
