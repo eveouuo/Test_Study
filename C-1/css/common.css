@@ -1,1 +1,20 @@
 @charset "UTF-8";
+
+* {color: #333; list-style: none; text-decoration: none;}
+.clearfix::after {display: block; clear: both; content: '';}
+
+#wrap {width: 1000px; margin: 0 auto;}
+
+/* header */
+header {width: 200px; float: left; background: wheat;}
+header .toplogo {width: 200px; height: 40px;}
+/* //header */
+
+/* slide */
+/* //slide */
+
+/* contents */
+/* //contents */
+
+/* footer */
+/* //footer */
