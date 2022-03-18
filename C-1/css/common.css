@@ -1,19 +1,52 @@
 @charset "UTF-8";
 
-* {color: #333; list-style: none; text-decoration: none;}
+* {margin: 0; padding: 0; color: #333; list-style: none; text-decoration: none;}
 .clearfix::after {display: block; clear: both; content: '';}
 
 #wrap {width: 1000px; margin: 0 auto;}
 
 /* header */
-header {width: 200px; float: left; background: wheat;}
-header .toplogo {width: 200px; height: 40px;}
+header {width: 200px; float: left; background: lavenderblush; height: 600px;}
+header .toplogo {width: 200px; height: 40px; padding: 20px 0;}
+
+header nav.gnb {text-align: center; width: 180px; margin:0 auto; background: peachpuff}
+header nav.gnb > ul > li > a {display: block; width: 100%; height: 30px; line-height: 30px; color: lightcoral; font-size: 17px;}
+header nav.gnb > ul > li:hover > a {color: #fff; background: palevioletred;}
+
+header nav.gnb > ul > li > ul.sub {display: none;}
+header nav.gnb > ul > li > ul.sub >li {height: 30px; line-height: 30px;}
+header nav.gnb > ul > li > ul.sub >li > a {display: block; width: 100%; font-size: 15px;}
+header nav.gnb > ul > li > ul.sub >li:hover > a {color: #fff; background: palevioletred;}
 /* //header */
 
 /* slide */
+#slide {width: 800px; height: 350px; float: right; overflow: hidden;}
+#slide img {display: block;}
 /* //slide */
 
 /* contents */
+section {float: left; height: 200px; }
+
+#contents {padding-right: 10px;}
+#contents .noti_gal {width: 300px; height: 200px; position: relative;}
+#contents .noti_gal h3 {display: block; width: 100px; height: 30px; line-height: 30px; text-align: center; position: absolute; top: 0; left: 0;}
+#contents .noti_gal > ul {border-top: 1px solid lightcoral; width: 290px; position: absolute; top: 30px; left: 0; display: none;}
+
+#contents .noti_gal .desc {padding: 10px;}
+#contents .noti_gal .desc > li > a {display: block; height: 20px; line-height: 20px;}
+#contents .noti_gal .desc > li > a:hover {display: block; color: lightcoral;}
+#contents .noti_gal .desc small {float: right;}
+
+#contents .noti_gal h3.l100 {position: absolute; left: 100px;}
+#contents .noti_gal ul.gal > li {float: left; padding: 20px 12px; padding-right: 0;}
+#contents .noti_gal ul.gal > li > a > img {display: block; width: 80px; height: 80px;}
+
+#contents .noti_gal h3.on {display: block; width: 100px; background: lightcoral; color: #fff;}
+#contents .noti_gal ul.on {display: block;}
+
+#ban {width: 250px; padding-left: 10px;}
+#ban img {display: block;}
+#baro {width: 250px;}
 /* //contents */
 
 /* footer */
